@@ -1,0 +1,334 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shivano royale</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <a href="#" class="logo">
+            Shivano
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>
+            Style That Fits Your Everyday
+        </h1>
+
+        <p>
+            Discover products made for your everyday style.
+        </p>
+
+        <a href="#products" class="hero-btn">
+            Explore Products
+        </a>
+
+    </section>
+    <!-- Products Section -->
+    <section class="products" id="products">
+
+        <h2>
+            Our Products
+        </h2>
+
+        <p class="products-intro">
+            Explore some of our featured products.
+        </p>
+
+
+        <!-- Search -->
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products..."
+        >
+
+
+        <!-- Category Filter -->
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Fashion">
+                Fashion
+            </option>
+
+            <option value="Footwear">
+                Footwear
+            </option>
+
+            <option value="Accessories">
+                Accessories
+            </option>
+
+            <option value="Bottoms">
+                Bottoms
+        </select>
+
+
+        <!-- Sort -->
+        <select id="sortProducts">
+
+            <option value="default">
+                Sort Products
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+        </select>
+
+
+        <!-- No Results Message -->
+        <p id="noResults">
+            No products found.
+        </p>
+
+
+        <!-- Product Cards -->
+        <div class="product-container">
+
+
+            <!-- Shirt -->
+            <div class="product-card">
+
+                <img
+                    src="./images/shirt.jpg"
+                    alt="Classic Shirt"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="product-category">
+                    Fashion
+                </span>
+
+                <h3>
+                    Classic Shirt
+                </h3>
+
+                <p>
+                    Comfortable and stylish shirt for everyday wear.
+                </p>
+
+                <h4>
+                    ₹999
+                </h4>
+
+                <a
+                    href="shirt.html"
+                    class="product-btn"
+                >
+                    View Product
+                </a>
+
+            </div>
+
+
+            <!-- Shoes -->
+            <div class="product-card">
+
+                <img
+                    src="./images/shoe.jpg"
+                    alt="Casual Shoes"
+                >
+
+                <span class="product-category">
+                    Footwear
+                </span>
+
+                <h3>
+                    Casual Shoes
+                </h3>
+
+                <p>
+                    Simple and comfortable shoes for daily use.
+                </p>
+
+                <h4>
+                    ₹1,499
+                </h4>
+
+                <a
+                    href="shoes.html"
+                    class="product-btn"
+                >
+                    View Product
+                </a>
+
+            </div>
+
+
+            <!-- Watch -->
+            <div class="product-card">
+
+                <img
+                    src="./images/watch.jpg"
+                    alt="Classic Watch"
+                >
+
+                <span class="product-category">
+                    Accessories
+                </span>
+
+                <h3>
+                    Classic Watch
+                </h3>
+
+                <p>
+                    Minimal design that fits every occasion.
+                </p>
+
+                <h4>
+                    ₹1,999
+                </h4>
+
+                <a
+                    href="watch.html"
+                    class="product-btn"
+                >
+                    View Product
+                </a>
+
+            </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>
+            About Shivano
+        </h2>
+
+        <p>
+            Shivano is a modern lifestyle brand focused on simple,
+            stylish and comfortable products for everyday life.
+            We believe good style should be simple, practical and accessible.
+        </p>
+       
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>
+            Contact Us
+        </h2>
+
+        <p>
+            Have a question? We'd love to hear from you.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:brandshivano7@gmail.com">
+                brandshivano7@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+918815945018">
+                +91 88159 45018
+            </a>
+        </p>
+
+        <p>
+            Instagram:
+            <a
+                href="https://instagram.com/smreath"
+                target="_blank"
+                class="social-link"
+            >
+                @smreath
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>
+            Shivano
+        </h3>
+
+        <p>
+            Simple style. Everyday comfort.
+        </p>
+
+        <p>
+            © 2026 Shivano. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Scroll To Top Button -->
+    <button
+        id="topButton"
+        title="Go to top"
+    >
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
