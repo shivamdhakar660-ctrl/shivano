@@ -1,47 +1,389 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Shoes | Shivano</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <nav>
-        <<a href="index.html" class="logo">Shivano</a>
-
-        <div>
-            <a href="index.html">Home</a>
-        </div>
-    </nav>
-
-    <section class="product-details">
-        <a href="index.html#products" class="back-btn">
-            <a href="index.html#contact" class="buy-btn">
-    Buy Now
-</a>
-    ← Back to Products
-</a>
-
-        <img src="images/shoes.jpg" alt="Casual Shoes">
-
-        <div>
-            <h1>Casual Shoes</h1>
-            <h2>₹1,499</h2>
-
-            <p>
-                Simple and comfortable shoes designed for
-                everyday use and casual style.
-            </p>
-
-            <a href="index.html" class="product-btn">
-                Back to Products
-            </a>
-        </div>
-
-    </section>
-
-</body>
-</html>
+```html 
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+ 
+    <meta charset="UTF-8"> 
+ 
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0" 
+    > 
+ 
+    <title>Casual Shoes | Shivano</title> 
+ 
+    <link 
+        rel="stylesheet" 
+        href="style.css" 
+    > 
+ 
+</head> 
+ 
+ 
+<body> 
+ 
+ 
+    <!-- Navbar --> 
+ 
+    <nav> 
+ 
+        <a 
+            href="index.html" 
+            class="logo" 
+        > 
+            Shivano 
+        </a> 
+ 
+        <div> 
+ 
+            <a href="index.html"> 
+                Home 
+            </a> 
+ 
+            <a href="index.html#products"> 
+                Products 
+            </a> 
+ 
+        </div> 
+ 
+    </nav> 
+ 
+ 
+ 
+    <!-- Product Details --> 
+ 
+    <section class="product-details"> 
+ 
+        <a 
+            href="index.html#products" 
+            class="back-btn" 
+        > 
+            ← Back to Products 
+        </a> 
+ 
+ 
+        <div class="product-detail-content"> 
+ 
+ 
+            <div class="product-detail-image"> 
+ 
+                <img 
+                    src="images/shoe.jpg" 
+                    alt="Casual Shoes" 
+                > 
+ 
+            </div> 
+ 
+ 
+ 
+            <div class="product-detail-info"> 
+ 
+                <span class="product-category"> 
+                    Footwear 
+                </span> 
+ 
+ 
+                <h1> 
+                    Casual Shoes 
+                </h1> 
+ 
+ 
+                <div class="product-detail-rating"> 
+ 
+                    ⭐ 4.4 
+ 
+                    <span> 
+                        (96 reviews) 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <h2> 
+                    ₹1,499 
+                </h2> 
+ 
+ 
+                <p> 
+                    Simple, comfortable and versatile shoes 
+                    designed for daily use. 
+                    Perfect for everyday wear and casual occasions. 
+                </p> 
+ 
+ 
+ 
+                <!-- Size Selection --> 
+ 
+                <div class="product-option"> 
+ 
+                    <h3> 
+                        Size 
+                    </h3> 
+ 
+ 
+                    <div class="size-options"> 
+ 
+                        <button type="button"> 
+                            7 
+                        </button> 
+ 
+                        <button 
+                            type="button" 
+                            class="selected" 
+                        > 
+                            8 
+                        </button> 
+ 
+                        <button type="button"> 
+                            9 
+                        </button> 
+ 
+                        <button type="button"> 
+                            10 
+                        </button> 
+ 
+                    </div> 
+ 
+                </div> 
+ 
+ 
+ 
+                <!-- Quantity --> 
+ 
+                <div class="product-option"> 
+ 
+                    <h3> 
+                        Quantity 
+                    </h3> 
+ 
+ 
+                    <div class="quantity-control"> 
+ 
+                        <button 
+                            type="button" 
+                            id="minusBtn" 
+                        > 
+                            − 
+                        </button> 
+ 
+ 
+                        <span id="quantity"> 
+                            1 
+                        </span> 
+ 
+ 
+                        <button 
+                            type="button" 
+                            id="plusBtn" 
+                        > 
+                            + 
+                        </button> 
+ 
+                    </div> 
+ 
+                </div> 
+ 
+ 
+ 
+                <!-- Product Actions --> 
+ 
+                <div class="product-actions"> 
+ 
+                    <a 
+                        href="#" 
+                        class="buy-btn" 
+                        id="buyNowBtn" 
+                    > 
+                        Buy Now 
+                    </a> 
+ 
+ 
+                    <a 
+                        href="index.html#products" 
+                        class="product-btn" 
+                    > 
+                        Back to Products 
+                    </a> 
+ 
+                </div> 
+ 
+ 
+            </div> 
+ 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- Similar Products --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            Similar Products 
+        </h2> 
+ 
+        <p> 
+            Products you may also like. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="similarProducts" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- You May Also Like --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            You May Also Like 
+        </h2> 
+ 
+        <p> 
+            More products from Shivano. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="recommendedProducts" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- Recently Viewed --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            Recently Viewed 
+        </h2> 
+ 
+        <p> 
+            Products you recently viewed. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="recentlyViewed" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- Buy Now Popup --> 
+ 
+    <div 
+        class="buy-popup" 
+        id="buyPopup" 
+    > 
+ 
+        <div class="buy-popup-content"> 
+ 
+ 
+            <button 
+                class="buy-popup-close" 
+                id="closeBuyPopup" 
+            > 
+                × 
+            </button> 
+ 
+ 
+            <div class="buy-popup-icon"> 
+                ✓ 
+            </div> 
+ 
+ 
+            <h2> 
+                Ready to Buy? 
+            </h2> 
+ 
+ 
+            <p> 
+                Your Casual Shoes are ready. 
+            </p> 
+ 
+ 
+            <div class="buy-summary"> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Size 
+                    </span> 
+ 
+                    <strong id="popupSize"> 
+                        8 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Quantity 
+                    </span> 
+ 
+                    <strong id="popupQuantity"> 
+                        1 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Total 
+                    </span> 
+ 
+                    <strong id="popupTotal"> 
+                        ₹1,499 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+            </div> 
+ 
+ 
+            <button 
+                class="confirm-buy-btn" 
+                id="confirmBuyBtn" 
+            > 
+                Continue 
+            </button> 
+ 
+ 
+        </div> 
+ 
+    </div> 
+ 
+ 
+ 
+    <!-- JavaScript --> 
+ 
+    <script src="script.js"></script> 
+ 
+ 
+</body> 
+ 
+</html> 
+``` 

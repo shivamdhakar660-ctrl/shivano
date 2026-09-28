@@ -1,49 +1,454 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product | Shivano</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <nav>
-        <a href="index.html" class="logo">Shivano</a>
-
-        <div>
-            <a href="index.html">Home</a>
-        </div>
-    </nav>
-
-    <!-- Product Details -->
-    <section class="product-details">
-        <a href="index.html#products" class="back-btn">
-            <a href="index.html#contact" class="buy-btn">
-    Buy Now
-</a>
-    ← Back to Products
-</a>
-
-        <img src="images/shirt.jpg" alt="Classic Shirt">
-
-        <div>
-            <h1>Classic Shirt</h1>
-            <h2>₹999</h2>
-
-            <p>
-                Comfortable and stylish shirt designed for
-                everyday wear.
-            </p>
-
-            <a href="index.html" class="product-btn">
-                Back to Products
-            </a>
-        </div>
-
-    </section>
-
-</body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+ 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>Classic Shirt | Shivano</title> 
+ 
+    <link rel="stylesheet" href="style.css"> 
+ 
+</head> 
+ 
+ 
+<body> 
+ 
+ 
+    <!-- ========================= 
+         NAVBAR 
+    ========================= --> 
+ 
+    <nav> 
+ 
+        <a href="index.html" class="logo"> 
+            Shivano 
+        </a> 
+ 
+        <div> 
+ 
+            <a href="index.html"> 
+                Home 
+            </a> 
+ 
+            <a href="index.html#products"> 
+                Products 
+            </a> 
+ 
+        </div> 
+ 
+    </nav> 
+ 
+ 
+ 
+    <!-- ========================= 
+         PRODUCT DETAILS 
+    ========================= --> 
+ 
+    <section class="product-details"> 
+ 
+        <a 
+            href="index.html#products" 
+            class="back-btn" 
+        > 
+            ← Back to Products 
+        </a> 
+ 
+ 
+        <div class="product-detail-content"> 
+ 
+ 
+            <!-- Product Image --> 
+ 
+            <div class="product-detail-image"> 
+ 
+                <img 
+                    src="images/shirt.jpg" 
+                    alt="Classic Shirt" 
+                > 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- Product Information --> 
+ 
+            <div class="product-detail-info"> 
+ 
+                <span class="product-category"> 
+                    Fashion 
+                </span> 
+ 
+ 
+                <h1> 
+                    Classic Shirt 
+                </h1> 
+ 
+ 
+                <div class="product-detail-rating"> 
+ 
+                    ⭐ 4.5 
+ 
+                    <span> 
+                        (128 reviews) 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <h2> 
+                    ₹999 
+                </h2> 
+ 
+ 
+                <p> 
+                    Comfortable and stylish shirt 
+                    designed for everyday wear. 
+                    Perfect for everyday use and 
+                    casual occasions. 
+                </p> 
+ 
+ 
+ 
+                <!-- ========================= 
+                     SIZE 
+                ========================= --> 
+ 
+                <div class="product-option"> 
+ 
+                    <h3> 
+                        Size 
+                    </h3> 
+ 
+ 
+                    <div class="size-options"> 
+ 
+                        <button type="button"> 
+                            S 
+                        </button> 
+ 
+                        <button 
+                            type="button" 
+                            class="selected" 
+                        > 
+                            M 
+                        </button> 
+ 
+                        <button type="button"> 
+                            L 
+                        </button> 
+ 
+                        <button type="button"> 
+                            XL 
+                        </button> 
+ 
+                    </div> 
+ 
+                </div> 
+ 
+ 
+ 
+                <!-- ========================= 
+                     QUANTITY 
+                ========================= --> 
+ 
+                <div class="product-option"> 
+ 
+                    <h3> 
+                        Quantity 
+                    </h3> 
+ 
+ 
+                    <div class="quantity-control"> 
+ 
+                        <button 
+                            type="button" 
+                            id="minusBtn" 
+                        > 
+                            − 
+                        </button> 
+ 
+ 
+                        <span id="quantity"> 
+                            1 
+                        </span> 
+ 
+ 
+                        <button 
+                            type="button" 
+                            id="plusBtn" 
+                        > 
+                            + 
+                        </button> 
+ 
+                    </div> 
+ 
+                </div> 
+ 
+ 
+ 
+                <!-- ========================= 
+                     PRODUCT ACTIONS 
+                ========================= --> 
+ 
+                <div class="product-actions"> 
+ 
+ 
+                    <a 
+                        href="#" 
+                        class="buy-btn" 
+                        id="buyNowBtn" 
+                    > 
+                        Buy Now 
+                    </a> 
+ 
+ 
+                    <a 
+                        href="index.html#products" 
+                        class="product-btn" 
+                    > 
+                        Back to Products 
+                    </a> 
+ 
+ 
+                </div> 
+ 
+            </div> 
+ 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- ========================= 
+         SIMILAR PRODUCTS 
+    ========================= --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            Similar Products 
+        </h2> 
+ 
+        <p> 
+            Products you may also like. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="similarProducts" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- ========================= 
+         YOU MAY ALSO LIKE 
+    ========================= --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            You May Also Like 
+        </h2> 
+ 
+        <p> 
+            More products from Shivano. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="recommendedProducts" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- ========================= 
+         BUY NOW POPUP 
+    ========================= --> 
+ 
+    <div 
+        class="buy-popup" 
+        id="buyPopup" 
+    > 
+ 
+        <div class="buy-popup-content"> 
+ 
+ 
+            <button 
+                class="buy-popup-close" 
+                id="closeBuyPopup" 
+            > 
+                × 
+            </button> 
+ 
+ 
+            <div class="buy-popup-icon"> 
+                ✓ 
+            </div> 
+ 
+ 
+            <h2> 
+                Ready to Buy? 
+            </h2> 
+ 
+ 
+            <p> 
+                Your Classic Shirt is ready. 
+            </p> 
+ 
+ 
+            <div class="buy-summary"> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Size 
+                    </span> 
+ 
+                    <strong id="popupSize"> 
+                        M 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Quantity 
+                    </span> 
+ 
+                    <strong id="popupQuantity"> 
+                        1 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+                <div> 
+ 
+                    <span> 
+                        Total 
+                    </span> 
+ 
+                    <strong id="popupTotal"> 
+                        ₹999 
+                    </strong> 
+ 
+                </div> 
+ 
+ 
+            </div> 
+ 
+ 
+            <button 
+                type="button" 
+                class="confirm-buy-btn" 
+                id="confirmBuyBtn" 
+            > 
+                Continue 
+            </button> 
+ 
+ 
+        </div> 
+ 
+    </div> 
+ 
+ 
+ 
+    <!-- ========================= 
+         ORDER CONFIRMED POPUP 
+    ========================= --> 
+ 
+    <div 
+        class="order-popup" 
+        id="orderPopup" 
+    > 
+ 
+        <div class="order-popup-content"> 
+ 
+ 
+            <div class="order-success-icon"> 
+                ✓ 
+            </div> 
+ 
+ 
+            <h2> 
+                Order Confirmed! 
+            </h2> 
+ 
+ 
+            <p> 
+                Thank you for choosing Shivano. 
+            </p> 
+ 
+ 
+            <div class="order-message"> 
+ 
+                Your order has been successfully 
+                placed. 
+ 
+            </div> 
+ 
+ 
+            <button 
+                type="button" 
+                class="order-done-btn" 
+                id="orderDoneBtn" 
+            > 
+                Done 
+            </button> 
+ 
+ 
+        </div> 
+ 
+    </div> 
+ 
+ 
+ 
+    <!-- ========================= 
+         RECENTLY VIEWED 
+    ========================= --> 
+ 
+    <section class="similar-products"> 
+ 
+        <h2> 
+            Recently Viewed 
+        </h2> 
+ 
+        <p> 
+            Products you recently viewed. 
+        </p> 
+ 
+ 
+        <div 
+            class="product-container" 
+            id="recentlyViewed" 
+        > 
+        </div> 
+ 
+    </section> 
+ 
+ 
+ 
+    <!-- ========================= 
+         JAVASCRIPT 
+    ========================= --> 
+ 
+    <script src="script.js"></script> 
+ 
+ 
+</body> 
+ 
+</html>  
