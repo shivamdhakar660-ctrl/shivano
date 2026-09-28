@@ -1,30 +1,54 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shivano royale</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <title>Shivano Royale</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
-    <!-- Navbar -->
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
     <nav>
 
-        <a href="#" class="logo">
+        <a
+            href="#"
+            class="logo"
+        >
             Shivano
         </a>
 
-        <button class="menu-btn" id="menuBtn">
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+        >
             ☰
         </button>
 
-        <div class="nav-links" id="navLinks">
+
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
 
             <a href="#">
                 Home
@@ -47,37 +71,245 @@
     </nav>
 
 
-    <!-- Hero Section -->
+
+    <!-- =========================
+         HERO / INTRO
+    ========================= -->
+
     <section class="hero">
 
-        <h1>
-            Style That Fits Your Everyday
-        </h1>
 
-        <p>
-            Discover products made for your everyday style.
-        </p>
+        <!-- HERO TEXT -->
 
-        <a href="#products" class="hero-btn">
-            Explore Products
-        </a>
+        <div class="hero-content">
+
+            <p class="hero-label">
+                WELCOME TO SHIVANO
+            </p>
+
+
+            <h1>
+
+                Style That Fits
+                <br>
+
+                Your Everyday.
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Discover simple, stylish and comfortable
+                products designed to make everyday life
+                look better.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#products"
+                    class="hero-btn"
+                >
+                    Explore Products →
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="hero-btn hero-btn-outline"
+                >
+                    Discover Shivano
+                </a>
+
+            </div>
+
+
+            <div class="hero-features">
+
+                <span>
+                    ✦ Simple Design
+                </span>
+
+                <span>
+                    ✓ Everyday Comfort
+                </span>
+
+                <span>
+                    ◆ Modern Style
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             PRODUCT SLIDER
+        ========================= -->
+
+        <div class="hero-slider">
+
+
+            <div class="slider-window">
+
+
+                <!-- SLIDE 1 -->
+
+                <div class="hero-slide active">
+
+                    <img
+                        src="./images/shirt.jpg"
+                        alt="Shivano Classic Shirt"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            FEATURED
+                        </span>
+
+                        <h3>
+                            Classic Shirt
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SLIDE 2 -->
+
+                <div class="hero-slide">
+
+                    <img
+                        src="./images/shoe.jpg"
+                        alt="Shivano Casual Shoes"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            EVERYDAY STYLE
+                        </span>
+
+                        <h3>
+                            Casual Shoes
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SLIDE 3 -->
+
+                <div class="hero-slide">
+
+                    <img
+                        src="./images/watch.jpg"
+                        alt="Shivano Classic Watch"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            NEW LOOK
+                        </span>
+
+                        <h3>
+                            Classic Watch
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREVIOUS BUTTON -->
+
+                <button
+                    class="slider-btn slider-prev"
+                    id="sliderPrev"
+                    aria-label="Previous product"
+                >
+                    ←
+                </button>
+
+
+                <!-- NEXT BUTTON -->
+
+                <button
+                    class="slider-btn slider-next"
+                    id="sliderNext"
+                    aria-label="Next product"
+                >
+                    →
+                </button>
+
+
+            </div>
+
+
+
+            <!-- SLIDER DOTS -->
+
+            <div class="slider-dots">
+
+                <button
+                    class="slider-dot active"
+                    data-slide="0"
+                    aria-label="Show shirt"
+                ></button>
+
+
+                <button
+                    class="slider-dot"
+                    data-slide="1"
+                    aria-label="Show shoes"
+                ></button>
+
+
+                <button
+                    class="slider-dot"
+                    data-slide="2"
+                    aria-label="Show watch"
+                ></button>
+
+            </div>
+
+
+        </div>
+
 
     </section>
 
 
-    <!-- Products Section -->
-    <section class="products" id="products">
+
+    <!-- =========================
+         PRODUCTS
+    ========================= -->
+
+    <section
+        class="products"
+        id="products"
+    >
 
         <h2>
             Our Products
         </h2>
+
 
         <p class="products-intro">
             Explore some of our featured products.
         </p>
 
 
-        <!-- Search -->
         <input
             type="text"
             id="productSearch"
@@ -85,7 +317,6 @@
         >
 
 
-        <!-- Category Filter -->
         <select id="categoryFilter">
 
             <option value="all">
@@ -111,7 +342,6 @@
         </select>
 
 
-        <!-- Sort -->
         <select id="sortProducts">
 
             <option value="default">
@@ -129,113 +359,151 @@
         </select>
 
 
-        <!-- No Results Message -->
         <p id="noResults">
             No products found.
         </p>
 
 
-        <!-- Product Cards -->
+
         <div class="product-container">
 
 
-            <!-- Shirt -->
+            <!-- SHIRT -->
+
             <div class="product-card">
 
-                <img
-                    src="./images/shirt.jpg"
-                    alt="Classic Shirt"
-                >
+                <div class="product-image-wrapper">
+
+                    <img
+                        src="./images/shirt.jpg"
+                        alt="Classic Shirt"
+                    >
+
+                    <span class="new-badge">
+                        NEW
+                    </span>
+
+                </div>
+
 
                 <span class="product-category">
                     Fashion
                 </span>
 
+
                 <h3>
                     Classic Shirt
                 </h3>
 
+
                 <p>
-                    Comfortable and stylish shirt for everyday wear.
+                    Comfortable and stylish shirt
+                    designed for everyday wear.
                 </p>
+
 
                 <h4>
                     ₹999
                 </h4>
 
+
                 <a
                     href="shirt.html"
                     class="product-btn"
                 >
-                    View Product
+                    View Product →
                 </a>
 
             </div>
 
 
-            <!-- Shoes -->
+
+            <!-- SHOES -->
+
             <div class="product-card">
 
-                <img
-                    src="./images/shoe.jpg"
-                    alt="Casual Shoes"
-                >
+                <div class="product-image-wrapper">
+
+                    <img
+                        src="./images/shoe.jpg"
+                        alt="Casual Shoes"
+                    >
+
+                </div>
+
 
                 <span class="product-category">
                     Footwear
                 </span>
 
+
                 <h3>
                     Casual Shoes
                 </h3>
 
+
                 <p>
-                    Simple and comfortable shoes for daily use.
+                    Simple, comfortable and versatile
+                    shoes for daily use.
                 </p>
+
 
                 <h4>
                     ₹1,499
                 </h4>
 
+
                 <a
                     href="shoes.html"
                     class="product-btn"
                 >
-                    View Product
+                    View Product →
                 </a>
 
             </div>
 
 
-            <!-- Watch -->
+
+            <!-- WATCH -->
+
             <div class="product-card">
 
-                <img
-                    src="./images/watch.jpg"
-                    alt="Classic Watch"
-                >
+                <div class="product-image-wrapper">
+
+                    <img
+                        src="./images/watch.jpg"
+                        alt="Classic Watch"
+                    >
+
+                </div>
+
 
                 <span class="product-category">
                     Accessories
                 </span>
 
+
                 <h3>
                     Classic Watch
                 </h3>
 
+
                 <p>
-                    Minimal design that fits every occasion.
+                    Minimal design that fits perfectly
+                    with every occasion.
                 </p>
+
 
                 <h4>
                     ₹1,999
                 </h4>
 
+
                 <a
                     href="watch.html"
                     class="product-btn"
                 >
-                    View Product
+                    View Product →
                 </a>
 
             </div>
@@ -246,80 +514,331 @@
     </section>
 
 
-    <!-- About Section -->
-    <section class="about" id="about">
 
-        <h2>
-            About Shivano
-        </h2>
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
-        <p>
-            Shivano is a modern lifestyle brand focused on simple,
-            stylish and comfortable products for everyday life.
-            We believe good style should be simple, practical and accessible.
-        </p>
+    <section
+        class="about"
+        id="about"
+    >
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT SHIVANO
+            </p>
+
+
+            <h2>
+                Simple Style.
+                <br>
+                Everyday Comfort.
+            </h2>
+
+
+            <p class="about-description">
+
+                Shivano is a modern lifestyle brand
+                focused on simple, stylish and
+                comfortable products for everyday life.
+                We believe good style should be practical,
+                accessible and easy to make your own.
+
+            </p>
+
+
+            <div class="about-features">
+
+
+                <div class="about-feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Simple
+                    </h3>
+
+                    <p>
+                        Clean designs made for everyday life.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Comfortable
+                    </h3>
+
+                    <p>
+                        Products designed with everyday
+                        comfort in mind.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-feature">
+
+                    <div class="feature-icon">
+                        ◆
+                    </div>
+
+                    <h3>
+                        Stylish
+                    </h3>
+
+                    <p>
+                        Modern looks that fit different
+                        occasions.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
 
-        <h2>
-            Contact Us
-        </h2>
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
-        <p>
-            Have a question? We'd love to hear from you.
-        </p>
+    <section
+        class="contact"
+        id="contact"
+    >
 
-        <p>
-            Email:
-            <a href="mailto:brandshivano7@gmail.com">
-                brandshivano7@gmail.com
-            </a>
-        </p>
+        <div class="contact-content">
 
-        <p>
-            Phone:
-            <a href="tel:+918815945018">
-                +91 88159 45018
-            </a>
-        </p>
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
 
-        <p>
-            Instagram:
-            <a
-                href="https://instagram.com/smreath"
-                target="_blank"
-                class="social-link"
-            >
-                @smreath
-            </a>
-        </p>
+
+            <h2>
+                Let's Connect.
+            </h2>
+
+
+            <p class="contact-intro">
+
+                Have a question or want to know more
+                about Shivano? Feel free to reach out
+                to us.
+
+            </p>
+
+
+            <div class="contact-cards">
+
+
+                <a
+                    href="mailto:brandshivano7@gmail.com"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Email
+                        </span>
+
+                        <strong>
+                            brandshivano7@gmail.com
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <a
+                    href="tel:+918815945018"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Phone
+                        </span>
+
+                        <strong>
+                            +91 88159 45018
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <a
+                    href="https://instagram.com/smreath"
+                    target="_blank"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        ◎
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Instagram
+                        </span>
+
+                        <strong>
+                            @smreath
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- Footer -->
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
 
-        <h3>
-            Shivano
-        </h3>
+        <div class="footer-content">
 
-        <p>
-            Simple style. Everyday comfort.
-        </p>
 
-        <p>
-            © 2026 Shivano. All rights reserved.
-        </p>
+            <div class="footer-brand">
+
+                <a
+                    href="#"
+                    class="footer-logo"
+                >
+                    Shivano
+                </a>
+
+
+                <p>
+                    Simple style. Everyday comfort.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <a href="#">
+                    Home
+                </a>
+
+
+                <a href="#products">
+                    Products
+                </a>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+
+                <a href="mailto:brandshivano7@gmail.com">
+                    brandshivano7@gmail.com
+                </a>
+
+
+                <a href="tel:+918815945018">
+                    +91 88159 45018
+                </a>
+
+
+                <a
+                    href="https://instagram.com/smreath"
+                    target="_blank"
+                >
+                    Instagram @smreath
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Shivano. All rights reserved.
+            </p>
+
+
+            <p>
+                Made with ♥ by Shivano
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- Scroll To Top Button -->
+
+    <!-- =========================
+         SCROLL TO TOP
+    ========================= -->
+
     <button
         id="topButton"
         title="Go to top"
@@ -328,10 +847,10 @@
     </button>
 
 
-    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
 
 </body>
 
 </html>
-```
